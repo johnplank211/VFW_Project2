@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- John Plank
 Term 6
-VFW Project 1
+VFW Project 2
 Apocalypse Checklist -->
 <html>
 	<head>
@@ -11,6 +11,7 @@ Apocalypse Checklist -->
 		<meta name="robots"      content="index, follow"/>
 		<meta name="viewport"    content="user-scalable=no, width=device-width"/>
 		<title>John Plank: Apocalypse Checklist</title>
+		<link href="styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<h1>Apocalypse Checklist</h1> 
@@ -18,70 +19,76 @@ Apocalypse Checklist -->
 			<fieldset>
 				<legend>What apocalypse are you currently experiencing</legend>
 					<ul>
-						<li><input type="radio" id="natural" name="apocalypse"/><label for="natural">Natural</label></li>
-						<li><input type="radio" id="nuclear" name="apocalypse"/><label for="nuclear">Nuclear</label></li>
-						<li><input type="radio" checked value="Zombie" id="zombie" name="apocalypse"/><label for="zombie">Zombie</label></li>
+						<li><input type="radio" id="Natural" value="Natural" name="apocalypse"/><label for="Natural">Natural</label></li>
+						<li><input type="radio" id="Nuclear" value="Nuclear" name="apocalypse"/><label for="Nuclear">Nuclear</label></li>
+						<li><input type="radio" id="Zombie" value="Zombie" name="apocalypse"/><label for="Zombie">Zombie</label></li>
 					</ul>				
 			</fieldset>
 			<fieldset>
 				<legend>Zombie Apocalypse Checklist</legend>
 					<ul>
 						<li>Check what you have, get what you don't</li>
-						<li><input type="checkbox" id="firearm" /><label for="firearm">Firearm</label></li>
+						<li><input type="checkbox" id="firearm"  /><label for="firearm">Firearm</label></li>
 						<li><input type="checkbox" id="ammo" /><label for="ammo">Ammo</label></li>
-						<li><input type="checkbox" id="melee Weapon" /><label for="melee Weapon">Melee Weapon</label></li>
+						<li><input type="checkbox" id="melee weapon" /><label for="melee weapon">Melee Weapon</label></li>
 						<li><input type="checkbox" id="canned Food" /><label for="canned Food">Canned Food</label></li>
 						<li><input type="checkbox" id="water" /><label for="water">Water</label></li>
-						<li><input type="checkbox" id="chain Mesh Suit" /><label for="chain Mesh Suit">Chain Mesh Suit <small>:$23,000</small></label></li>
+						<li><input type="checkbox" id="chain mesh suit" /><label for="chain mesh suit">Chain Mesh Suit <small>:$23,000</small></label></li>
 						<li><input type="checkbox" id="topographical map" /><label for="topographical map">Topographical map</label></li>
 						<li><input type="checkbox" id="leatherman" /><label for="leatherman">Leatherman</label></li>
 						<li><input type="checkbox" id="rucksack" /><label for="rucksack">Rucksack</label></li>
 						<li><input type="checkbox" id="boots" /><label for="boots">Boots</label></li>
 						<li><input type="checkbox" id="matches" /><label for="matches">Matches</label></li>
 						<li><input type="checkbox" id="p38" /><label for="p38">P38</label></li>
-						<li><input type="checkbox" checked value="intestinal fortitude" id="intestinal fortitude"/><label for="intestinal fortitude">Intestinal Fortitude</label></li>
+						<li><input type="checkbox" id="intestinal fortitude" /><label for="intestinal fortitude">Intestinal Fortitude</label></li>
 					</ul>
 			</fieldset>
 		<h2>Add additional items for comfort only. </h2><small> Remember if you plan to travel on foot weight is not yor friend.</small>
 			<fieldset>
 					<legend>Additonal items</legend>
 					<ul>
-						<li><label for="item">Item</label><input type="text" id="item" /></li>
-						<li><label for="item">Item</label><input type="text" id="item" /></li>
-						<li><label for="item">Item</label><input type="text" id="item" /></li>
-						<li><label for="item">Item</label><input type="text" id="item" /></li>
-						<li><label for="item">Item</label><input type="text" id="item" /></li>
-						<li><label for="item">Item</label><input type="text" id="item" /></li>
+						<li><label for="item">Item</label><input type="text" id="item" /></li>			
 					</ul>
 			</fieldset>
 			<fieldset>
 				<legend>Last questions</legend>
-				<li>
+				<li id="select">
 					<label for ="fear" >Fear level</label>
-					<select id ="fear" >
+					<select id ="fear" > 
 						<option value ="In denial still">In denial still</option>
 						<option value ="Oops I crapped my pants">Oops I crapped my pants</option>
-						<option value ="Psalm 144:1">Psalm 144:1</option>
-					</select>
-				</li>		
-				<li>How would you rate your readiness?</li>
-					<label for="rating">On a scale of 1 to 10:</label>
-					<input type="range" min="1" max="10" name="rating" type="range"/>
-						<legend>If someone finds this please send accordingly.</legend>
+						<option value ="Psalm 144:1">Psalm 144:1</option> 
+					 </select>
+				</li>		 
+				<li><label for="Readiness">Readiness</label><input type="range" min="70" max="140" id=   	"readiness" /></li>
 						<ul>
 							<li>Your personal info</li>
 								<li><label for="startdate">The world ended:</label><input type="date" id="startdate" name="startdate" required aria-required="true"/></li>
 						        <li><label for="email">Your love one email address is</label><input type="email" id="email" placeholder="example@email.com"/></li>
 								<li><label for="comments">Death letter here:</label><textarea id="comments"></textarea></li>
 						</ul>
+				<legend>If someone finds this please send accordingly.</legend>
 			</fieldset>
 		</form>
-	    <input type="submit" value="Am I Ready?"/>
+	    <nav>
+	    	<a href="#" id="clear">Clear Stored Data</a>
+	    	<a href="#" id="displayLink">Display data</a>
+	    </nav>
+	    <input type="submit" value="Am I Ready?" id="submit"/>
+		<script type="text/javascript" src="main2.js"></script>
 	</body>
 </html>
 
 
 
 
-
+				<!-- <legend>Last questions</legend>
+				<li id="select"><label for="fear">Fear level</label></li>
+					< <label for ="fear" >Fear level</label>
+					<select id ="fear" > 
+						<option value ="In denial still">In denial still</option>
+						<option value ="Oops I crapped my pants">Oops I crapped my pants</option>
+						<option value ="Psalm 144:1">Psalm 144:1</option> 
+					</select>
+				</li>	 -->	
 
