@@ -36,7 +36,27 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	};
 
-	function storeData() {
+	var toggleControls = function (n) {
+		switch(n) {
+			case "on":
+				$("contactForm").style.display = "none";
+				$("clear").style.display = "inline";
+				$("displayLink").style.display = "none";
+				$("addNew").style.display = "inline";
+				break;
+		   case "off":		
+		   		$("contactForm").style.display = "blcok";
+				$("clear").style.display = "inline";
+				$("displayLink").style.display = "inline";
+				$("addNew").style.display = "none";
+				$("items").style.display = "none";
+		   		break;
+		   	  default:
+		   	  	return false;
+		}
+	}
+
+	var storeData = function () {
 		var id    			= Math.floor(Math.random()* 1000001);
 		getRadio();
 		var item 			= {};
@@ -66,11 +86,13 @@ window.addEventListener("DOMContentLoaded", function(){
 	};
 
 	var getData = function () {
+		toggleControls("on");
 		var makeDiv = document.createElement("div");
 		makeDiv.setAttribute("id", "items");
 		var makeList = document.createElement("ul");
 		makeDiv.appendChild(makeList);
 		document.body.appendChild(makeDiv);
+		$("items").style.display = "display";
 		for (var i = 0, len = localStorage.length; i < len; i++) {
 			 var makeli = document.createElement("li");
 			 makeList.appendChild(makeli);
