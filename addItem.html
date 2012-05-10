@@ -7,7 +7,7 @@ Apocalypse Checklist -->
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="A checklist for your life"/>
-		<meta name="keyword"     content="apocalypse, checklist, Full Sail, mobile development"/>
+		<meta name="keywords"     content="apocalypse, checklist, Full Sail, mobile development"/>
 		<meta name="robots"      content="index, follow"/>
 		<meta name="viewport"    content="user-scalable=no, width=device-width"/>
 		<title>John Plank: Apocalypse Checklist</title>
@@ -30,17 +30,17 @@ Apocalypse Checklist -->
 						<li>Check what you have, get what you don't</li>
 						<li><input type="checkbox" id="firearm"  /><label for="firearm">Firearm</label></li>
 						<li><input type="checkbox" id="ammo" /><label for="ammo">Ammo</label></li>
-						<li><input type="checkbox" id="melee weapon" /><label for="melee weapon">Melee Weapon</label></li>
-						<li><input type="checkbox" id="canned Food" /><label for="canned Food">Canned Food</label></li>
+						<li><input type="checkbox" id="meleeWeapon" /><label for="meleeWeapon">Melee Weapon</label></li>
+						<li><input type="checkbox" id="cannedFood" /><label for="cannedFood">Canned Food</label></li>
 						<li><input type="checkbox" id="water" /><label for="water">Water</label></li>
-						<li><input type="checkbox" id="chain mesh suit" /><label for="chain mesh suit">Chain Mesh Suit <small>:$23,000</small></label></li>
-						<li><input type="checkbox" id="topographical map" /><label for="topographical map">Topographical map</label></li>
+						<li><input type="checkbox" id="chainMeshSuit" /><label for="chainMeshSuit">Chain Mesh Suit <small>:$23,000</small></label></li>
+						<li><input type="checkbox" id="topographicalMap" /><label for="topographicalMap">Topographical map</label></li>
 						<li><input type="checkbox" id="leatherman" /><label for="leatherman">Leatherman</label></li>
 						<li><input type="checkbox" id="rucksack" /><label for="rucksack">Rucksack</label></li>
 						<li><input type="checkbox" id="boots" /><label for="boots">Boots</label></li>
 						<li><input type="checkbox" id="matches" /><label for="matches">Matches</label></li>
 						<li><input type="checkbox" id="p38" /><label for="p38">P38</label></li>
-						<li><input type="checkbox" id="intestinal fortitude" /><label for="intestinal fortitude">Intestinal Fortitude</label></li>
+						<li><input type="checkbox" id="intestinalFortitude" /><label for="intestinalFortitude">Intestinal Fortitude</label></li>
 					</ul>
 			</fieldset>
 		<h2>Add additional items for comfort only. </h2><small> Remember if you plan to travel on foot weight is not yor friend.</small>
@@ -52,43 +52,27 @@ Apocalypse Checklist -->
 			</fieldset>
 			<fieldset>
 				<legend>Last questions</legend>
-				<li id="select">
-					<label for ="fear" >Fear level</label>
-					<select id ="fear" > 
-						<option value ="In denial still">In denial still</option>
-						<option value ="Oops I crapped my pants">Oops I crapped my pants</option>
-						<option value ="Psalm 144:1">Psalm 144:1</option> 
-					 </select>
-				</li>		 
-				<li><label for="Readiness">Readiness</label><input type="range" min="70" max="140" id=   	"readiness" /></li>
-						<ul>
-							<li>Your personal info</li>
-								<li><label for="startdate">The world ended:</label><input type="date" id="startdate" name="startdate" required aria-required="true"/></li>
-						        <li><label for="email">Your love one email address is</label><input type="email" id="email" placeholder="example@email.com"/></li>
-								<li><label for="comments">Death letter here:</label><textarea id="comments"></textarea></li>
-						</ul>
-				<legend>If someone finds this please send accordingly.</legend>
+					<ul>
+						<li id="select">How scared are you?<br /></li>
+						<li><label for="readiness">Readiness</label><input type="range" min="0" max="11" id="readiness" /></li>						
+						<li>Your personal info</li>
+						<li><label for="date" >The world ended:</label><input type="date" id="date" /></li>
+						 <li><label for="email">Your love one email address is</label><input type="email" id="email" placeholder="example@email.com"/></li>
+						<li><label for="comments">Death letter here:</label><textarea id="comments"></textarea></li>
+					</ul>
+				<h3>If someone finds this please send accordingly.</h3>
 			</fieldset>
 		</form>
 	    <nav>
 	    	<a href="#" id="clear">Clear Stored Data</a>
 	    	<a href="#" id="displayLink">Display data</a>
 	    </nav>
-	    <input type="submit" value="Am I Ready?" id="submit"/>
-		<script type="text/javascript" src="main2.js"></script>
+	    <input type="submit" value="Save Life" id="submit"/>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
 
 
 
 
-				<!-- <legend>Last questions</legend>
-				<li id="select"><label for="fear">Fear level</label></li>
-					< <label for ="fear" >Fear level</label>
-					<select id ="fear" > 
-						<option value ="In denial still">In denial still</option>
-						<option value ="Oops I crapped my pants">Oops I crapped my pants</option>
-						<option value ="Psalm 144:1">Psalm 144:1</option> 
-					</select>
-				</li>	 -->	
-
+				
