@@ -1,16 +1,11 @@
 /*John Plank
 VFW Project 2
-05-05-2012
+05-10-2012
+term 06
 Form.html styles 
 Apocalypse Checklist*/
 
-
-
-
-
-
 h1 {
-    /*position: absolute;*/
     top: 10px;
     left: 10px;
     color: white;
@@ -30,13 +25,6 @@ h1 {
 }
 
 
-html {
-	background-image: url("Doom.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-
 fieldset {
 	background: #b5b59f;
 }
@@ -44,22 +32,6 @@ fieldset {
 html {
 	background: #cccca3;
 }
-
-/*h1 {
-	margin: ;
-	border: ;
-	padding: ;
-	background: #339933;
-	width: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	font-style: bolder;
-	text-shadow: 0.1em 0.1em #333;
-	color: white;
-	font-family: times, courier, arial;
-	background: transparent-green;
-	font-family: courier;
-}*/
 
 small {
 	font-style: italic;
